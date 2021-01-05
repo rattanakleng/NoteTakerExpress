@@ -88,12 +88,12 @@ app.delete("/api/notes/:id", function (req, res) {
 
 // route that send notes.html to user
 app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/notes.html"));
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
 // Basic route that sends the user to the AJAX Page
 app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/index.html"));
+    res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 //start the server to begin listening
